@@ -52,10 +52,6 @@ button {
   gap: 1.875rem;
 }
 
-.topbar__link {
-  gap: 1.875rem;
-}
-
 .topbar__link:hover {
   color: #6c5ce7;
 }
@@ -198,7 +194,6 @@ button {
 .search__btn {
   width: 40px;
   height: 100%;
-  border: none;
   border: solid 1.5px #6f73ee;
   background-color: #6f73ee;
   color: #fff;
@@ -303,7 +298,7 @@ button {
   flex-shrink: 0;
 }
 
-.hero__adress,
+.hero__address,
 .hero__schedule {
   font-size: 12px;
   font-weight: 500;
