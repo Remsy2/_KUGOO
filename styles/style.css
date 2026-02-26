@@ -8,7 +8,6 @@
 
 body {
   font-family: "Jost", sans-serif;
-  background-color: #ecf3ff;
 }
 
 a {
@@ -256,16 +255,29 @@ button {
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  background: #6f73ee;
 }
 
-.hero__girl {
+.hero__banner::after {
+  content: "";
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  width: 1101px;
-  height: 445px;
+  bottom: 0;
   z-index: 0;
+  background: url(../img/young-woman-riding-electric_scooter.png) right / cover
+    no-repeat;
+}
+
+.hero__banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(47deg, #6f73ee 17%, rgba(111, 115, 238, 0) 67%);
 }
 
 .hero__overlay {
@@ -279,7 +291,7 @@ button {
 
 .hero__content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   height: 100%;
