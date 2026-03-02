@@ -120,15 +120,17 @@ button {
   align-items: center;
   gap: 11px;
   height: 2.5rem;
+  width: 7.1rem;
   padding: 0 18px;
   background: #6f73ee;
   color: #fff;
   border: none;
+  position: relative;
+  right: -5px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
-  flex-shrink: 0;
-  margin-right: 23px;
+  margin-right: 26px;
   transition:
     background 0.2s,
     transform 0.15s;
@@ -265,8 +267,9 @@ button {
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: url(../img/young-woman-riding-electric_scooter.png) right / cover
-    no-repeat;
+  background: url(../img/young-woman-riding-electric_scooter.png) right /
+    contain no-repeat;
+  background-position: calc(168% -190px);
 }
 
 .hero__banner::before {
@@ -301,8 +304,17 @@ button {
 .hero__info {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 17px;
+  gap: 0.375rem;
+  margin-bottom: 1.875rem;
+  width: 22.5625rem;
+  height: 0.3125rem;
+  font-family: Jost;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
 }
 
 .hero__pin {
@@ -321,23 +333,34 @@ button {
   font-size: 35px;
   font-weight: 600;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.3;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  max-width: 660px;
+  margin-bottom: 7px;
+  padding: 3px 6px;
+
+  width: 616px;
+  height: 102px;
+  /* margin: 19px 632px 7px 136px; */
 }
 
 .hero__subtitle {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 6px;
+  bottom: 5px;
 }
 
 .hero__features {
   display: flex;
-  gap: 36px;
   margin-bottom: 38px;
+  width: 487px;
+  height: 37px;
+  position: relative;
+  left: 1px;
+  justify-content: space-between;
 }
 
 .hero__feature {
@@ -375,9 +398,10 @@ button {
   width: 159px;
   height: 53px;
   border-radius: 5px;
+  position: relative;
+  left: 6px;
   border: 1.3px solid #fff;
   background-color: #fff;
-  font-family: "Jost", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #6f73ee;
