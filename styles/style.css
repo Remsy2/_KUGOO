@@ -269,7 +269,8 @@ button {
   z-index: 0;
   background: url(../img/young-woman-riding-electric_scooter.png) right /
     contain no-repeat;
-  background-position: calc(168% -190px);
+  /* background-position: calc(168% -190px); */
+  background-position: clamp(100%, calc(10% + 5.625rem), 168%) center;
 }
 
 .hero__banner::before {
@@ -411,4 +412,145 @@ button {
 .hero__btn:hover {
   background-color: transparent;
   color: #fff;
+}
+
+/* TEST DRIVE */
+.testdrive {
+  padding: 0 30px 72px;
+  margin: 75px auto;
+}
+
+.testdrive__title {
+  position: relative;
+  left: 135px;
+  bottom: 46px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 645px;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  color: #282739;
+  text-transform: uppercase;
+}
+
+.testdrive__description {
+  position: relative;
+  left: 135px;
+  bottom: 17px;
+  width: 487px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #282739;
+  margin-bottom: 38px;
+}
+
+.testdrive__list {
+  position: relative;
+  bottom: 38px;
+  right: 5px;
+  gap: 10px 20px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 135px;
+}
+
+.testdrive__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+
+  text-align: left;
+}
+
+.testdrive__item svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+}
+
+.scooters__image {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 54.0625rem;
+  bottom: 26.4375rem;
+}
+
+/* GIRL SCOOTER */
+
+.testdrive {
+  padding: 0 30px 72px;
+  margin: 75px auto;
+}
+
+.testdrive__title {
+  position: relative;
+  left: 135px;
+  bottom: 46px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 645px;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  color: #282739;
+  text-transform: uppercase;
+}
+
+.testdrive__description {
+  position: relative;
+  left: 135px;
+  bottom: 17px;
+  width: 487px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #282739;
+  margin-bottom: 38px;
+}
+
+.testdrive__list {
+  position: relative;
+  bottom: 38px;
+  right: 5px;
+  gap: 10px 20px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 135px;
+}
+
+.testdrive__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+
+  text-align: left;
+}
+
+.testdrive__item svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+}
+
+.scooters__image {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 54.0625rem;
+  bottom: 26.4375rem;
 }
