@@ -486,15 +486,15 @@ button {
 
 /* GIRL SCOOTER */
 
-.testdrive {
+.girl__drive {
   padding: 0 30px 72px;
   margin: 75px auto;
 }
 
-.testdrive__title {
+.girlScooter__title {
   position: relative;
-  left: 135px;
-  bottom: 46px;
+  left: 610px;
+  bottom: 440px;
   /* display: flex;
   flex-wrap: wrap; */
   width: 645px;
@@ -505,10 +505,10 @@ button {
   text-transform: uppercase;
 }
 
-.testdrive__description {
+.girlScooter__description {
   position: relative;
-  left: 135px;
-  bottom: 17px;
+  left: 38.125rem;
+  bottom: 25.6875rem;
   width: 487px;
   font-size: 20px;
   font-weight: 500;
@@ -517,11 +517,12 @@ button {
   margin-bottom: 38px;
 }
 
-.testdrive__list {
+.girlScooter__list {
   position: relative;
-  bottom: 38px;
-  right: 5px;
-  gap: 10px 20px;
+  bottom: 27rem;
+  left: 29.5625rem;
+  gap: 0.625rem 1.25rem;
+  z-index: 1;
 
   list-style: none;
   margin: 0;
@@ -532,7 +533,7 @@ button {
   padding-left: 135px;
 }
 
-.testdrive__item {
+.girlScooter__item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -541,16 +542,15 @@ button {
   text-align: left;
 }
 
-.testdrive__item svg {
+.girlScooter__item svg {
   width: 22px;
   height: 22px;
   flex: 0 0 22px;
 }
 
-.scooters__image {
+.girlScooter__image {
   display: flex;
   align-items: center;
   position: relative;
-  left: 54.0625rem;
-  bottom: 26.4375rem;
+  bottom: 53.3125rem;
 }
