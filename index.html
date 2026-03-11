@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
     <header class="header">
@@ -673,31 +674,31 @@
           <div class="footer__bottom-left">
             <span class="footer__bottom-logo">KUGOO</span>
             <div class="footer__stores">
-              <a class="footer__store" href="#">
-                <img src="img/google-play.svg" alt="Google Play" height="40" />
+              <a class="footer__store footer__store--google-play" href="#">
+                <img src="img/google-play.svg" alt="Google Play" height="45" />
               </a>
-              <a class="footer__store" href="#">
-                <img src="img/app-store.svg" alt="App Store" height="40" />
+              <a class="footer__store footer__store--apple-pay" href="#">
+                <img src="img/app-store.svg" alt="App Store" height="45" />
               </a>
             </div>
           </div>
           <div class="footer__socials">
-            <a class="footer__social" href="#">
-              <img src="img/vk-block.svg" alt="VK" height="30" />
+            <a class="footer__social footer__vk" href="#">
+              <img src="img/vk-block.svg" alt="VK" height="20" />
               <div class="footer__social-info">
                 <span class="footer__social-name">Вконтакте</span>
                 <span class="footer__social-count">3 300</span>
               </div>
             </a>
             <a class="footer__social" href="#">
-              <img src="img/youtube-block.svg" alt="YouTube" height="30" />
+              <img src="img/youtube-block.svg" alt="YouTube" height="20" />
               <div class="footer__social-info">
                 <span class="footer__social-name">YouTube</span>
                 <span class="footer__social-count">3 603</span>
               </div>
             </a>
             <a class="footer__social" href="#">
-              <img src="img/telegram-block.svg" alt="Telegram" height="30" />
+              <img src="img/telegram-block.svg" alt="Telegram" height="20" />
               <div class="footer__social-info">
                 <span class="footer__social-name">Telegram</span>
                 <span class="footer__social-count">432</span>
@@ -709,76 +710,95 @@
     </footer>
 
     <!-- PRIVACY POLICY -->
+    <!-- FOOTER LEGAL -->
     <section class="privacy">
       <div class="privacy__container">
-        <!-- <img src="./img/footer/cards_payment.png" alt=""> -->
-        <p class="privacy__text_policy">Политика конфиденциальности</p>
-        <p class="privacy__text">Реквезиты</p>
-      </div>
-      <img
-        class="privacy__container-footer"
-        src="img/GPay.svg"
-        alt="Google Pay"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/ApplePay.svg"
-        alt="Apple Pay"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/Visa.svg"
-        alt="Visa"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/maestro.svg"
-        alt="Maestro"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/Maestro2.svg"
-        alt="Maestro"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/Webmoney.svg"
-        alt="Webmoney"
-        height="30"
-      />
-      <img
-        class="privacy__container-footer"
-        src="img/Qiwi.svg"
-        alt="Qiwi"
-        height="30"
-      />
-
-      <div class="privacy__online-chat">
-        <p class="privacy__text-online-chat">Online чат:</p>
-        <div class="privacy__social-chat">
-          <a class="topbar__icon" href="#" aria-label="Viber">
-            <svg class="topbar__svg" width="12" height="12">
-              <use href="img/sprite.svg#icon-viber"></use>
-            </svg>
-          </a>
-          <a class="topbar__icon" href="#" aria-label="WhatsApp">
-            <svg class="topbar__svg" width="12" height="12">
-              <use href="img/sprite.svg#icon-whatsapp"></use>
-            </svg>
-          </a>
-          <a class="topbar__icon" href="#" aria-label="Telegram">
-            <svg class="topbar__svg" width="12" height="12">
-              <use href="img/sprite.svg#icon-telegram"></use>
-            </svg>
-          </a>
+        <div class="privacy__links">
+          <a class="privacy__link" href="#">Реквизиты</a>
+          <a class="privacy__link" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="privacy__payments">
+          <img src="img/GPay.svg" alt="Google Pay" height="20" />
+          <img src="img/ApplePay.svg" alt="Apple Pay" height="20" />
+          <img src="img/Visa.svg" alt="Visa" height="20" />
+          <img src="img/maestro.svg" alt="Mastercard" height="20" />
+          <img src="img/Maestro2.svg" alt="Maestro" height="20" />
+          <img src="img/Webmoney.svg" alt="WebMoney" height="20" />
+          <img src="img/Qiwi.svg" alt="Qiwi" height="20" />
+        </div>
+        <div class="privacy__chat">
+          <span class="privacy__chat-label">Online чат:</span>
+          <div class="privacy__chat-icons">
+            <a class="topbar__icon" href="#" aria-label="Viber">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#icon-viber"></use>
+              </svg>
+            </a>
+            <a class="topbar__icon" href="#" aria-label="WhatsApp">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a class="topbar__icon" href="#" aria-label="Telegram">
+              <svg width="18" height="18">
+                <use href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal__overlay" id="modalOverlay"></div>
+      <div class="modal__body">
+        <button class="modal__close" id="modalClose" type="button">
+          &times;
+        </button>
+        <div class="modal__content">
+          <div class="modal__left">
+            <h2 class="modal__title">
+              Запишитесь на тест-драйв электросамоката
+            </h2>
+            <p class="modal__subtitle">и подберите модель для себя</p>
+            <p class="modal__text">
+              Менеджер свяжется с вами в течение 5 минут, чтобы согласовать
+              время.
+            </p>
+
+            <form class="modal__form">
+              <label class="modal__label">Как с вами удобнее связаться?</label>
+              <input
+                class="modal__input"
+                type="tel"
+                placeholder="+7 (___) __ - __ - __"
+                required
+              />
+              <button class="modal__button" type="submit">
+                Оформить предзаказ
+              </button>
+
+              <div class="modal__consent">
+                <input
+                  class="modal__checkbox"
+                  type="checkbox"
+                  id="modal-consent"
+                />
+                <label class="modal__consent-text" for="modal-consent">
+                  Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                  данных и <a href="#">политикой конфиденциальности</a>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal__right">
+            <img src="img/sign-up/signup_test-drive.png" alt="Тест-драйв" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

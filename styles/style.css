@@ -1009,14 +1009,11 @@ button {
 
 /* FOOTER */
 .footer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 836px;
-  right: 110px;
   border-top: 1px solid #eaebed;
   padding: 40px 0;
   background: #fff;
+  position: relative;
+  bottom: 837px;
 }
 
 .footer__container {
@@ -1166,19 +1163,22 @@ button {
 .footer__socials {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer__social {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  padding: 15px 25px;
+  background: #f4f7fb;
+  border-radius: 10px;
   color: #282739;
   transition: transform 0.3s ease;
 }
 
 .footer__social:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .footer__social img {
@@ -1202,43 +1202,73 @@ button {
   font-weight: 400;
   color: #5d6c7b;
 }
-
-/* PRIVACY POLICY */
+/* FOOTER LEGAL */
 .privacy {
-  padding: 40px 0;
+  border-top: 1px solid #eaebed;
+  padding: 20px 0;
   position: relative;
-  bottom: 900px;
+  bottom: 857px;
 }
 
-.privacy__container-footer {
+.privacy__container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-  /* background: url(../img/footer/cards_payment.png) no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  background: url(../img/footer/chat_social_footer.png) no-repeat;
-  background-position: center;
-  background-size: contain; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.privacy__title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #282739;
-  margin-bottom: 24px;
+.privacy__links {
+  display: flex;
+  gap: 40px;
 }
 
-.privacy__text_policy {
-  font-size: 16px;
+.privacy__link {
+  font-size: 12px;
   font-weight: 400;
   color: #5d6c7b;
-  margin-bottom: 16px;
+  transition: color 0.3s ease;
 }
 
-.privacy__text {
-  font-size: 14px;
+.privacy__link:hover {
+  color: #4d52da;
+}
+
+.privacy__payments {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.privacy__payments img {
+  display: block;
+  height: 20px;
+}
+
+.privacy__chat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.privacy__chat-label {
+  font-size: 12px;
   font-weight: 400;
   color: #5d6c7b;
+}
+
+.privacy__chat-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.privacy__chat-icons a {
+  color: #5d6c7b;
+  transition: transform 0.3s ease;
+}
+
+.privacy__chat-icons a:hover {
+  transform: scale(1.2);
 }

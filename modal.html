@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModalForm</title>
+    <link rel="stylesheet" href="styles/modal.css" />
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal__overlay" id="modalOverlay"></div>
+      <div class="modal__body">
+        <button class="modal__close" id="modalClose">&times;</button>
+        <div class="modal__content">
+          <div class="modal__left">
+            <h2 class="modal__title">
+              Запишитесь на тест-драйв электросамоката
+            </h2>
+            <p class="modal__subtitle">и подберите модель для себя</p>
+            <p class="modal__text">
+              Менеджер свяжется с вами в течение 5 минут, чтобы согласовать
+              время.
+            </p>
+            <form class="modal__form">
+              <label class="modal__label">Как с вами удобнее связаться?</label>
+              <input
+                class="modal__input"
+                type="tel"
+                placeholder="+7 (___) __ - __ - __"
+                required
+              />
+              <button class="modal__button" type="submit">
+                Оформить предзаказ
+              </button>
+              <div class="modal__consent">
+                <input
+                  class="modal__checkbox"
+                  type="checkbox"
+                  id="modal-consent"
+                />
+                <label class="modal__consent-text" for="modal-consent"
+                  >Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                  данных и <a href="#">политикой конфиденциальности</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal__right">
+            <img src="img/sign-up/signup_test-drive.png" alt="Тест-драйв" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
