@@ -275,54 +275,26 @@ button {
   border-radius: 10px;
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(111, 115, 238, 1) 0%,
-      rgba(111, 115, 238, 0.95) 25%,
-      rgba(111, 115, 238, 0.85) 45%,
-      rgba(111, 115, 238, 0.65) 60%,
-      rgba(111, 115, 238, 0.4) 72%,
-      rgba(111, 115, 238, 0.2) 82%,
-      rgba(111, 115, 238, 0.08) 90%,
-      rgba(111, 115, 238, 0) 100%
-    ),
-    url(../img/young-woman-riding-electric_scooter.png) right center / contain
-      no-repeat;
-  background-position: clamp(100%, calc(10% + 5.625rem), 168%) center;
+  background: url(../img/young-woman-riding-electric_scooter.png) right center /
+    contain no-repeat;
   background-color: #6f73ee;
 }
-
-/* .hero__banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  background: url(../img/young-woman-riding-electric_scooter.png) right /
-    contain no-repeat; */
-/* background-position: calc(168% -190px); */
-/* background-position: clamp(100%, calc(10% + 5.625rem), 168%) center;
-} */
 
 .hero__banner::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
-
   background: linear-gradient(
     90deg,
     rgba(111, 115, 238, 1) 0%,
-    rgba(111, 115, 238, 0.95) 25%,
-    rgba(111, 115, 238, 0.85) 45%,
-    rgba(111, 115, 238, 0.65) 60%,
-    rgba(111, 115, 238, 0.4) 72%,
-    rgba(111, 115, 238, 0.2) 82%,
-    rgba(111, 115, 238, 0.08) 90%,
-    rgba(111, 115, 238, 0) 100%
+    rgba(111, 115, 238, 0.95) 18%,
+    rgba(111, 115, 238, 0.85) 32%,
+    rgba(111, 115, 238, 0.65) 44%,
+    rgba(111, 115, 238, 0.4) 54%,
+    rgba(111, 115, 238, 0.2) 61%,
+    rgba(111, 115, 238, 0.08) 66%,
+    rgba(111, 115, 238, 0) 72%
   );
 }
 
