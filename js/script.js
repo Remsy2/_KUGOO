@@ -28,6 +28,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =========================
+  // Phone mask: +7 XXX XXX XX XX
+  // =========================
+  function initPhoneMask(input) {
+    const PREFIX = "+7 ";
+
+    function extractDigits(val) {
+      let d = val.replace(/\D/g, "");
+      if (d.startsWith("7") || d.startsWith("8")) d = d.slice(1);
+      return d.slice(0, 10);
+    }
+
+    function applyMask(digits) {
+      let r = "+7";
+      if (digits.length > 0) r += " " + digits.slice(0, 3);
+      if (digits.length > 3) r += " " + digits.slice(3, 6);
+      if (digits.length > 6) r += " " + digits.slice(6, 8);
+      if (digits.length > 8) r += " " + digits.slice(8, 10);
+      return r;
+    }
+
+    input.value = PREFIX;
+
+    input.addEventListener("input", function () {
+      const digits = extractDigits(this.value);
+      this.value = digits.length === 0 ? PREFIX : applyMask(digits);
+    });
+
+    input.addEventListener("keydown", function (e) {
+      if (
+        (e.key === "Backspace" || e.key === "Delete") &&
+        this.selectionStart <= PREFIX.length &&
+        this.selectionStart === this.selectionEnd
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    input.addEventListener("focus", function () {
+      if (!this.value.startsWith("+7")) this.value = PREFIX;
+      const len = this.value.length;
+      requestAnimationFrame(() => this.setSelectionRange(len, len));
+    });
+  }
+
+  document.querySelectorAll('input[type="tel"]').forEach(initPhoneMask);
+
+  // =========================
   // Telegram settings
   // =========================
   const BOT_TOKEN = "8787699576:AAEVCimKagfm6wOcXa6iTgJtd2Jgl-eJPKE";
