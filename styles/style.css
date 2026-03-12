@@ -212,9 +212,25 @@ button {
 .mainbar__actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
   flex-shrink: 0;
   margin-left: 50px;
+}
+
+.mainbar__compare {
+  transform: translate(-3px);
+}
+
+.mainbar__heart {
+  transform: translate(-8px);
+}
+
+.mainbar__cart {
+  transform: translate(-10px);
+}
+
+.cart__name {
+  transform: translate(10px);
 }
 
 .action {
@@ -405,10 +421,10 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.hero__feature-icon svg {
-  display: block;
+  width: 43px;
+  height: 41px;
+  flex-wrap: wrap;
+  transform: translate(4px);
 }
 
 .hero__feature-text {
