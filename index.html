@@ -91,9 +91,49 @@
               <span class="action__label cart__name">Корзина</span>
             </a>
           </div>
+
+          <!-- Burger (mobile only) -->
+          <button class="mainbar__burger" id="burgerBtn" type="button" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav__overlay" id="mobileNavOverlay"></div>
+      <div class="mobile-nav__panel">
+        <button class="mobile-nav__close" id="mobileNavClose" aria-label="Закрыть">&times;</button>
+        <div class="mobile-nav__search">
+          <input type="text" placeholder="Искать самокат KUGOO" />
+          <button type="button" aria-label="Поиск">
+            <svg width="18" height="18"><use href="img/sprite.svg#icon-search"></use></svg>
+          </button>
+        </div>
+        <nav class="mobile-nav__links">
+          <a class="mobile-nav__link btn__call" href="#">Записаться на тест-драйв</a>
+          <a class="mobile-nav__link" href="#">Сервис</a>
+          <a class="mobile-nav__link" href="#">Сотрудничество</a>
+          <a class="mobile-nav__link" href="#">Заказать звонок</a>
+        </nav>
+        <a class="mobile-nav__phone" href="tel:+78005055461">+7 (800) 505-54-61</a>
+        <div class="mobile-nav__actions">
+          <a class="action" href="#" aria-label="Сравнение">
+            <img src="./img/balance 2.png" alt="Compare" />
+          </a>
+          <a class="action" href="#" aria-label="Избранное">
+            <img src="./img/heart.png" alt="" />
+          </a>
+          <a class="action" href="#" aria-label="Корзина">
+            <img src="./img/cart.png" alt="Cart" />
+            <span class="action__label">Корзина</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- HERO BANNER -->
     <section class="hero">
@@ -142,41 +182,43 @@
 
     <!-- TEST DRIVE -->
     <section class="testdrive">
-      <div class="testdrive__info">
-        <h2 class="testdrive__title">
-          Определите максимально подходящую вам модель <br />не теоретически, а
-          на практике
-        </h2>
-        <p class="testdrive__description">Тест-драйв поможет:</p>
+      <div class="testdrive__inner">
+        <div class="testdrive__text">
+          <h2 class="testdrive__title">
+            Определите максимально подходящую вам модель <br />не теоретически,
+            а на практике
+          </h2>
+          <p class="testdrive__description">Тест-драйв поможет:</p>
 
-        <ul class="testdrive__list">
-          <li class="testdrive__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Понять, подходит ли вам конкретная модель;
-          </li>
-          <li class="testdrive__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Испытать самокат в «реальной жизни»;
-          </li>
-          <li class="testdrive__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Оценить удобство хранения и эксплуатации;
-          </li>
-          <li class="testdrive__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Узнать реальные характеристики и возможности модели.
-          </li>
-        </ul>
+          <ul class="testdrive__list">
+            <li class="testdrive__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Понять, подходит ли вам конкретная модель;
+            </li>
+            <li class="testdrive__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Испытать самокат в «реальной жизни»;
+            </li>
+            <li class="testdrive__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Оценить удобство хранения и эксплуатации;
+            </li>
+            <li class="testdrive__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Узнать реальные характеристики и возможности модели.
+            </li>
+          </ul>
+        </div>
 
-        <div class="scooters__image">
+        <div class="testdrive__image">
           <img src="./img/scooters.png" alt="Two scooters" />
         </div>
       </div>
@@ -184,49 +226,51 @@
 
     <!-- GIRL SCOOTER -->
     <section class="girl__drive">
-      <div class="girlScooter__info">
-        <h2 class="girlScooter__title">
-          Научим правильной <br />и безопасной езде в городе <br />вас или
-          вашего ребенка
-        </h2>
-        <p class="girlScooter__description">
-          На обучении специалист расскажет:
-        </p>
+      <div class="girlScooter__inner">
+        <div class="girlScooter__text">
+          <h2 class="girlScooter__title">
+            Научим правильной <br />и безопасной езде в городе <br />вас или
+            вашего ребенка
+          </h2>
+          <p class="girlScooter__description">
+            На обучении специалист расскажет:
+          </p>
 
-        <ul class="girlScooter__list">
-          <li class="girlScooter__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Как подготовить самокат к поездке;
-          </li>
-          <li class="girlScooter__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Как «завести» самокат;
-          </li>
-          <li class="girlScooter__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Как вести себя во время поездки и обезопасить себя и окружающих;
-          </li>
-          <li class="girlScooter__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Как складывать и раскладывать электросамокат;
-          </li>
-          <li class="girlScooter__item">
-            <svg>
-              <use href="img/sprite.svg#check_circle"></use>
-            </svg>
-            Как ухаживать за своим девайсом.
-          </li>
-        </ul>
+          <ul class="girlScooter__list">
+            <li class="girlScooter__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Как подготовить самокат к поездке;
+            </li>
+            <li class="girlScooter__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Как «завести» самокат;
+            </li>
+            <li class="girlScooter__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Как вести себя во время поездки и обезопасить себя и окружающих;
+            </li>
+            <li class="girlScooter__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Как складывать и раскладывать электросамокат;
+            </li>
+            <li class="girlScooter__item">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#check_circle"></use>
+              </svg>
+              Как ухаживать за своим девайсом.
+            </li>
+          </ul>
+        </div>
 
-        <div class="girlScooter__image">
+        <div class="girlScooter__image-wrap">
           <img src="./img/girl_scooter.png" alt="Girl Scooter" />
         </div>
       </div>

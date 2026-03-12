@@ -1,5 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
   // =========================
+  // Mobile navigation
+  // =========================
+  const burgerBtn = document.getElementById("burgerBtn");
+  const mobileNav = document.getElementById("mobileNav");
+  const mobileNavClose = document.getElementById("mobileNavClose");
+  const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+
+  if (burgerBtn && mobileNav) {
+    function openMobileNav() {
+      mobileNav.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMobileNav() {
+      mobileNav.classList.remove("is-open");
+      document.body.style.overflow = "";
+    }
+
+    burgerBtn.addEventListener("click", openMobileNav);
+    mobileNavClose.addEventListener("click", closeMobileNav);
+    mobileNavOverlay.addEventListener("click", closeMobileNav);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMobileNav();
+    });
+  }
+
+  // =========================
   // Telegram settings
   // =========================
   const BOT_TOKEN = "8787699576:AAEVCimKagfm6wOcXa6iTgJtd2Jgl-eJPKE";
